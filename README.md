@@ -3,7 +3,7 @@
 ## Tables
 ### Task Table
 The Task table represents a task, or unit of work, that is to be tracked.
-The task it is automatically generated.
+Task_ID is automatically generated.
 The estimated time is in hours.
 The priority is either 'high', 'medium', or 'low'.
 The status is 'pending', 'active', or 'done'.
@@ -24,7 +24,7 @@ create table Task (
 ### Task Dependencies table 
 
 The tasks dependencies table describes when one task depends on another task being done
-before the task can completed.
+before the task can be completed.
 Task_ID is any task.
 The Depends_On_Task is another task that Task_ID depends on.
 | Task_ID | Depends_On_Task |
