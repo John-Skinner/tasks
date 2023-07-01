@@ -8,7 +8,7 @@ The estimated time is in hours.
 The priority is either 'high', 'medium', or 'low'.
 The status is 'pending', 'active', or 'done'.
 
-| Task_Desc     | Task_ID               | Estimated_Time | Priority | STATUS |
+| Descripton    | ID                    | Estimated_Time | Priority | STATUS |
 |---------------|-----------------------|----------------| --- | --- |
 | CHARACTOR(24) | INTEGER (PRIMARY KEY) | INTEGER        | INTEGER | CHARACTOR(10) |
 

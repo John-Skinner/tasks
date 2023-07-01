@@ -1,0 +1,22 @@
+{
+  "name": "task-serve",
+  "version": "1.0.0",
+  "description": "server-side settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
