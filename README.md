@@ -59,7 +59,7 @@ The task assignment table describes who is assigned to each task.
 | --- | --- |
 | INTEGER | INTEGER |
 
-```angular2html
+```
 create table Task_Assignment (
 Task_ID INTEGER,
 Assigned_To INTEGER
