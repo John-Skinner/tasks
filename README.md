@@ -2,6 +2,12 @@
 
 ## Tables
 ### Task Table
+The Task table represents a task, or unit of work, that is to be tracked.
+The task it is automatically generated.
+The estimated time is in hours.
+The priority is either 'high', 'medium', or 'low'.
+The status is 'pending', 'active', or 'done'.
+
 | Task_Desc     | Task_ID               | Estimated_Time | Priority | STATUS |
 |---------------|-----------------------|----------------| --- | --- |
 | CHARACTOR(24) | INTEGER (PRIMARY KEY) | INTEGER        | INTEGER | CHARACTOR(10) |
@@ -16,6 +22,11 @@ create table Task (
 );
 ```
 ### Task Dependencies table 
+
+The tasks dependencies table describes when one task depends on another task being done
+before the task can completed.
+Task_ID is any task.
+The Depends_On_Task is another task that Task_ID depends on.
 | Task_ID | Depends_On_Task |
 | --- | --- |
 | INTEGER | INTEGER |
@@ -26,6 +37,10 @@ create table Task_Deps (
 );
 ```
 ### Team Member Table
+The team member table describes members of the team that can be assigned a set of tasks.
+The Workload_PerWeek describes how much time a member has in a week to work on tasks.
+The ID is the team member's ID, and is auto-generated.
+
 | Name | Workload_Per_Week | ID |
 | --- | --- | --- |
 | CHARACTOR(24) | INTEGER | INTEGER (PRIMARY_KEY) |
@@ -37,6 +52,9 @@ ID Integer PRIMARY KEY
 );
 ```
 ## Task Assignment Table
+
+The task assignment table describes who is assigned to each task.
+
 | Task_ID | AssignedTo | 
 | --- | --- |
 | INTEGER | INTEGER |
