@@ -13,6 +13,7 @@
 
 ### Team Member Table
 | Name | Workload_Per_Week | ID |
+| --- | --- | --- |
 | CHARACTOR(24) | INTEGER | INTEGER (PRIMARY_KEY) |
 ## Task Assignment Table
 | Task_ID | AssignedTo | 
