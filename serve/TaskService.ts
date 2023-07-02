@@ -6,7 +6,7 @@ const app = express();
 sqlite3.verbose();
 let dbLoc='/home/ubuntu/serverRoot/tasks/tasks.db';
 let macLoc='/Users/johnskinner/sql/tasks.db';
-let db=new sqlite3.Database(macLoc,(err) => {
+let db=new sqlite3.Database(dbLoc,(err) => {
     if (err) {
         console.error('error on db connect ' + err);
     }
@@ -17,6 +17,6 @@ let db=new sqlite3.Database(macLoc,(err) => {
 app.get('/table',(req,res)=> {
     res.send('table is received');
 });
-app.listen(3300,() => {
-    console.log('listening on 3300');
+app.listen(80,() => {
+    console.log('listening on 80');
 })
