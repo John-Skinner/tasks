@@ -65,3 +65,14 @@ Task_ID INTEGER,
 Assigned_To INTEGER
 );
 ```
+
+```
+create table task (id integer,desc char(24), primary key(id));
+insert into task (id,desc) values(1,'item1')
+insert into task (id,desc) values(2,'item2')
+```
+
+```
+select * from task where desc='item1';
+```
+

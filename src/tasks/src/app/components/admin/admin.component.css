@@ -1,0 +1,32 @@
+:host {
+    display: grid;
+    grid-template-columns: 4cm 10cm;
+}
+#adminCmdLabelID {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#adminCmdID {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#getCmdLabelID {
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+#getCmdID {
+    grid-column: 2/3;
+    grid-row:2/3;
+}
+#runCmdLabelID {
+    grid-column: 1/2;
+    grid-row:3/4;
+}
+#runCmdID {
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+#resetID {
+    grid-column:1/2;
+    grid-row:4/5;
+}

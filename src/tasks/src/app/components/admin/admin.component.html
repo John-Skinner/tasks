@@ -1,0 +1,7 @@
+<input type="text" id="adminCmdID" (change)="issueCommand($event)" [disabled]="requestPending">
+<label id="adminCmdLabelID" for="adminCmdID">Admin (Exec)</label>
+<button id="resetID" (click)="adminReset()" [disabled]="requestPending">Reset</button>
+<input type="text" id="getCmdID" (change)="get($event)" [disabled]="requestPending">
+<label id="getCmdLabelID" for="getCmdID">Get (Select)</label>
+<input type="text" id="runCmdID" (change)="run($event)" [disabled]="requestPending">
+<label id="runCmdLabelID" for="runCmdID">Run (insert) </label>
